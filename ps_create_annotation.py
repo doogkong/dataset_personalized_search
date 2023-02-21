@@ -136,7 +136,6 @@ if __name__ == "__main__":
     # export PYTHONPATH=`pwd`:$PYTHONPATH
     # python ps_preprocess.py --queries_path queries.json --human_annotation_path dr_90k_annotation.csv  --doc_corpus_path doc2url.csv --output_qrels_path qrels_dr_90k.txt
     data_dir=~/xxxx_data/iscontext
-    aws s3 sync s3://xxxx/p13n_context/ ${data_dir}
     export in_queryfile=$data_dir/queries.json
     export in_doc_corpus_path=$data_dir/doc2url.csv
     export in_human_annotation=$data_dir/dr_90k_annotation.csv
