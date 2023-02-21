@@ -254,7 +254,6 @@ if __name__ == "__main__":
             in_qrels, in_query, out_CTX_ES_SCORE)
 
     """
-    aws s3 sync s3://xxxx/p13n_context/ ${path}
     export in_query_path=$path/queries.json
     export in_es_index=is2_docs_pb2a_context_only
     export out_aes_run_file=$path/aes_runfile.txt
